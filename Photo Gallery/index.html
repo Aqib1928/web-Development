@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Photo Gallery</h1>
+    </header>
+    <main class="gallery-container">
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://play-lh.googleusercontent.com/Fto1xcq6wMHJ8RiXHFjsgwxMEoTVj4wpLQO1ucBL0VP7we7OsvS1FHxf2viW-lGzHA" alt="Photo 1" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://art-tuning.com/wp-content/uploads/2024/06/BRABUS-800-KALAHARIGOLD-17.jpg" alt="Photo 2" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://www.bmwgroup.com/en/company/_jcr_content/main/layoutcontainer_1988/columncontrol/columncontrolparsys/globalimage.coreimg.jpeg/1701354503044/720x720-i5er.jpeg" alt="Photo 3" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/img-1484-jpg-649644d3c1386.jpg?crop=0.571xw:0.762xh;0.240xw,0.195xh&resize=1200:*" alt="Photo 4" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://prodhq.s3.amazonaws.com/img/content/gp1/models/2023/toyota/gr_supra_white_front_grill_passenger_side_1080x1080.png" alt="Photo 5" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-911/small/0e1cf3c0-0b8e-11ef-8128-005056bbdc38;sQ;twebp;c890;gc/porsche-small.webp" alt="Photo 6" onclick="openLightbox(this)">
+            </div>
+        </div>
+    </main>
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" alt="Expanded view">
+    </div>
+    <footer>
+        <p>&copy; 2024 Photo Gallery</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
