@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>My Blog</h1>
+        </div>
+    </header>
+    <main class="container">
+        <section id="blog-list">
+            <h2>Recent Blogs</h2>
+            <div class="blog-card" onclick="viewBlog(1)">
+                <h3>Introduction to Web Development</h3>
+                <p>A beginner-friendly guide to HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="blog-card" onclick="viewBlog(2)">
+                <h3>Understanding Flexbox</h3>
+                <p>Master layout creation with this powerful CSS tool.</p>
+            </div>
+        </section>
+        <section id="blog-detail" style="display: none;">
+            <button onclick="backToList()">Back</button>
+            <div id="blog-content"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Blog</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
